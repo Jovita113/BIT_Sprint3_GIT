@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+
+</head>
+<body>
+    <header>
+        <ul class="nav nav-pills justify-content-end bg-success p-2 text-white bg-opacity-25">
+            <div class="d-flex mx-auto ms-5">
+            <a class="navbar-brand text-dark" href="../index.html">
+                <img src="../assets/house-fill.svg" alt="home icon" width="30" height="30" class="d-inline-block align-text-top">
+                Home Decor Shop
+            </a>
+        </div>
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active bg-danger" aria-current="page" href="./contact.html">Contact</a></li>
+        <ul>
+    </header>
+    
+    <section class="container-sm mt-5 shadow p-3 mb-5 bg-body rounded">
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+        <div class="row ms-5 ">
+            <div class="col-md-9 mb-md-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <div class="col">
+               <img src="../assets/bonsai.jpg" alt="decor" width="200px">
+            </div>
+        </div>
+    </section>
+    
+    <footer class=" bg-success p-2 text-dark bg-opacity-25 ">
+        <ul class="nav justify-content-center mt-2 mb-2 text-decoration-underline">
+            <li><a class="nav-link text-secondary" href="../index.html">Home</a></li>
+            <li><a class="nav-link text-secondary" href="./about.html">About</a></li>
+            <li><a class="nav-link text-secondary" href="./contact.html">Contact</a></li> 
+        </ul>
+        <p class="text-center">Copyright @2022 | Designed With by Home Decor</p>
+    </footer>
+
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> 
+
+</body>
+</html>
